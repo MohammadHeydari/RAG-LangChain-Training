@@ -11,7 +11,6 @@ class OllamaRunnable(Runnable):
 
         url = f"{self.base_url}/api/generate"
 
-        # 🔥 تبدیل به string
         prompt_str = input.to_string()
 
         payload = {
