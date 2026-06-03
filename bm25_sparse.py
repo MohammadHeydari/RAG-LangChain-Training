@@ -15,7 +15,7 @@ class OllamaRunnable(Runnable):
 
     def invoke(self, input, config=None):
 
-        # 🔥 FIX: convert ChatPromptValue → string
+
         if hasattr(input, "to_string"):
             prompt = input.to_string()
         elif hasattr(input, "messages"):
